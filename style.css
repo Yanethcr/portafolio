@@ -1,0 +1,13 @@
+/*  */
+
+#presentacion {
+    height: 88vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    /*es lo mismo que 
+    <section id="presentacion" class="container col-xxl-8 px-4 py-5 d-flex justify-content-start align-items-center">
+
+    */
+}
