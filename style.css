@@ -11,3 +11,37 @@
 
     */
 }
+
+.proyecto {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#proyecto-1 {
+    background-image: url('p-google.png');
+}
+
+#proyecto-2 {
+    background-image: url('p-google.png');
+}
+
+/*  
+
+En lugar de que se repita este codigo muchas veces es mucho mejor que se pongan las propiedades que se repiten en una clase y queda mucho mas corto 
+
+#proyecto-1 {
+    background-image: url('p-google.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+*/
+.text-shadow-1 {
+    text-shadow: 1px -1px 8px rgba(0, 0, 0, 1);
+}
+
+/* crear un boton de da click en la imagen 
+copié el que tenía en el apartado de presentación
+nada más con que pongas el botón dentro del link
+*/
