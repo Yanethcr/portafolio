@@ -24,9 +24,9 @@
     <!-- Comenzaremos a utilizar etiquetas semanticas para crear la maqueta principal -->
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
+        <nav class="navbar fixed-top navbar-expand-lg bg-black" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand" href="#">Karla</a>
+                <a class="navbar-brand" href="#presentacion">Karla</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,16 +34,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"> Habilidades</a>
+                            <a class="nav-link active" aria-current="page" href="#habilidades"> Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Proyectos</a>
+                            <a class="nav-link active" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Testimonios</a>
+                            <a class="nav-link active" href="#testimonios">Testimonios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Contacto</a>
+                            <a class="nav-link active" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -52,7 +52,7 @@
     </header>
 
 
-    <main>
+    <main class="pb-5 mb-5">
 
 
         <section id="presentacion" class="container-fluid">
@@ -60,12 +60,10 @@
                 <div class="row flex-lg-row align-items-center g-5 py-5 my-5">
 
                     <div class="col-lg-6">
-                        <h1 class="display-5 fw-bold text-white text-shadow-1 mb-3">Karla Cruz
+                        <h1 id="app" class="display-5 fw-bold text-white text-shadow-1 mb-3">Karla Yaneth Cruz Sandoval
                         </h1>
-                        <p class="lead text-white text-shadow-1">Desarrolladora blah, blah. Desarrolladora blah, blah.
-                            Desarrolladora
-                            blah, blah.
-                            Desarrolladora blah, blah. Desarrolladora blah, blah.</p>
+                        <p class="lead text-white text-shadow-1">Estudiante de ingenieria en ciencias de la
+                            computacion y desarrolladora de frotnend junior</p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
 
                             <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contáctame</button>
@@ -86,28 +84,67 @@
                         class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
                         <i class="bi bi-code-square"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Desarrollo web</h3>
-                    <p>Soy bien chida para HTML, CSS, JS.</p>
-                </div>
-
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
-                        <i class="bi bi-code-square"></i>
-                    </div>
-                    <h3 class="fs-2 text-body-emphasis">Desarrollo web</h3>
-                    <p>Soy bien chida para HTML, CSS, JS.</p>
+                    <h3 class="fs-2 text-body-emphasis">Desarrollo Web</h3>
+                    <p>Conozco y aprendo cada vez mas de lo que son HTML, CSS y JS para el desarrollo y creacion dee
+                        paginas webs</p>
                 </div>
 
                 <div class="feature col">
                     <div
                         class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
                         <!-- aqui se coloca el icono  -->
-                        <i class="bi bi-code-square"></i>
+                        <i class="bi bi-tv"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Desarrollo web</h3>
-                    <p>Soy bien chida para HTML, CSS, JS.</p>
+                    <h3 class="fs-2 text-body-emphasis">Tecnologias Emergentes </h3>
+                    <p>Realice un curso acerca de las tecnologias emergentes, como fueron evolucionando y cuales son
+                        aquellas que usamos en la actualidad</p>
                 </div>
+
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
+                        <!-- aqui se coloca el icono  -->
+                        <i class="bi bi-terminal-fill"></i>
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Programación </h3>
+                    <p>Tengo conocimiento acerca de Java, Lenguaje C y C++</p>
+                </div>
+
+
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
+                        <i class="bi bi-check-circle"></i>
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Responsable </h3>
+                    <p>Soy comprometida y cumplida con los trabajos que realizo, buscando siempre dar un buen resultado.
+                    </p>
+                </div>
+
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
+                        <i class="bi bi-heart-fill"></i>
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Empatia</h3>
+                    <p>Tiendo a comprender las diferentes situaciones y emociones que se puedan presentar, considerando
+                        las diferentes perspectivas.
+                    </p>
+                </div>
+
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
+                        <!-- aqui se coloca el icono  -->
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Trabajo en equipo </h3>
+                    <p>Durante mi tiempo como estudiante es algo que constantemente se trabaja debido a que varios de
+                        los proyectos se manejan en equipo por lo que considero que se trabajar en equipos con distintos
+                        pensamientos e ideas, donde juntos se colobora por llegar a una solución.</p>
+                </div>
+
+
         </section>
 
         <section class="container px-4 py-5" id="proyectos">
@@ -209,16 +246,43 @@
     </main>
 
 
-    <footer id="contacto" class="container">
-        <div class="py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    <footer id="contacto" class="container-fluid bg-black" data-bs-theme="dark">
+        <div class="py-4">
+            <div class="text-center mt-3">
+                <i class="bi bi-flower1 fs-1 text-body-secondary"></i>
+
+            </div>
+
+            <h4 class="text-center text-body-secondary mt-3 mb-5">" Hay algunas flores que solo ves cuando tomas
+                desvíos.
+                Tanaka
+                Seako"
+            </h4>
+            <ul class="nav justify-content-center  pb-3 mb-4">
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/yan_crsl/" target="_blank"
+                        class="nav-link px-2 text-body-secondary"><i class="bi bi-instagram fs-1"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/yan_crsl/" target="_blank"
+                        class="nav-link px-2 text-body-secondary"><i class="bi bi-linkedin fs-1"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/yan_crsl/" target="_blank"
+                        class="nav-link px-2 text-body-secondary"><i class="bi bi-github fs-1"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/yan_crsl/" target="_blank"
+                        class="nav-link px-2 text-body-secondary"><i class="bi bi-envelope fs-1"></i>
+                    </a>
+                </li>
             </ul>
-            <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+            <p class="text-center text-body-secondary">© 2024 Karla, TECNOLOCHICAS PRO</p>
         </div>
     </footer>
 
@@ -229,6 +293,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script src="script.js"></script>
 
 </body>
 
