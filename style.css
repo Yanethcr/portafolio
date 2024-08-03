@@ -52,3 +52,8 @@ En lugar de que se repita este codigo muchas veces es mucho mejor que se pongan 
 copié el que tenía en el apartado de presentación
 nada más con que pongas el botón dentro del link
 */
+.sarina-regular {
+    font-family: "Sarina", cursive;
+    font-weight: 400;
+    font-style: normal;
+}

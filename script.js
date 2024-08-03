@@ -1,4 +1,4 @@
-// alert("Hola Mundo <3");
+//alert("Hola Mundo <3");
 
 // se ocupa let porque var hace que las variables vivan en otros archivos
 
@@ -9,15 +9,43 @@ let typewriter = new Typewriter(app, {
     delay: 75,
 });
 
+// aqui permite que la etiqueta sea manipulada
+//reconoces una accion tiene paréntesis después del nombre de la accion
+// a veces tiene el operador punto
+//typewriter
+
+typewriter
+    .pauseFor(2500) //milisegundos 2.5 segundos
+    .typeString('Karla Yaneth Cruz Sandoval')
+    .pauseFor(300)
+    .deleteAll()
+    .typeString('Desarrolladora FRONTEND JR ')
+    .pauseFor(1000)
+    .start();
+
+
+let frase = document.getElementById('frase');
+
+let typewriterFrase = new Typewriter(frase, {
+    loop: true,
+    delay: 75,
+});
 
 // aqui permite que la etiqueta sea manipulada
 //reconoces una accion tiene paréntesis después del nombre de la accion
 // a veces tiene el operador punto
-typewriter
-    .pauseFor(2500)  //milisegundos 2.5 segundos
-    .typeString('Karla Yaneth Cruz Sandoval')
-    .pauseFor(300)
-    .deleteall()
-    .typeString('Desarrolladora Frontend JR')
+//typewriter
+
+typewriterFrase
+    .pauseFor(2500) //milisegundos 2.5 segundos
+    .typeString('"Hay algunas flores que solo ves cuando tomas desvíos."')
+    .pauseFor(400)
+    .deleteAll()
+    .typeString('Tanaka Seako ')
     .pauseFor(1000)
     .start();
+
+
+
+
+
