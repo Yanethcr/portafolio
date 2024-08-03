@@ -11,7 +11,7 @@
 
     */
 
-    background-image: url("/portafolio/assets/fon2.avif");
+    background-image: url("assets/fon2.avif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -26,11 +26,11 @@
 }
 
 #proyecto-1 {
-    background-image: url('/portafolio/assets/p-google.png');
+    background-image: url('assets/p-google.png');
 }
 
 #proyecto-2 {
-    background-image: url('/portafolio/assets/p-google.png');
+    background-image: url('assets/p-google.png');
 }
 
 /*  
