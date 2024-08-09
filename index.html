@@ -11,12 +11,17 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-
-    <!-- estilo de titulo nombre -->
+    <!-- Para añadir la musica -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sarina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap" rel="stylesheet">
 
+
+    <!-- estilo de titulo nombre -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -26,13 +31,18 @@
 
 <body>
 
+    <audio id="miAudio" autoplay>
+        <source src="assets/music/audio.mp3" type="audio/mpeg">
+    </audio>
+
+
 
     <!-- Comenzaremos a utilizar etiquetas semanticas para crear la maqueta principal -->
 
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg bg-black" data-bs-theme="dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-lila">
             <div class="container">
-                <a class="navbar-brand" href="#presentacion">Karla</a>
+                <a class="navbar-brand prata-regular" href="#presentacion">Hello!</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -40,16 +50,21 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#habilidades"> Habilidades</a>
+                            <a class="nav-link active prata-regular" aria-current="page" href="#habilidades">
+                                Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#proyectos">Proyectos</a>
+                            <a class="nav-link active prata-regular" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#testimonios">Testimonios</a>
+                            <a class="nav-link active prata-regular" href="#testimonios">Testimonios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#contacto">Contacto</a>
+                            <a class="nav-link active prata-regular" href="#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item btn btn-light">
+                            <button id="pauseButton  ">Pausar</button>
+
                         </li>
                     </ul>
                 </div>
@@ -66,16 +81,16 @@
                 <div class="row flex-lg-row align-items-center g-5 py-5 my-5">
 
                     <div class="col-lg-6">
-                        <h1 id="app" class="display-5 fw-bold text-white text-shadow-1 mb-3 sarina-regular ">Karla
-                            Yaneth Cruz Sandoval
+                        <h1 id="app" class="display-5 fw-bold text-black text-shadow-4 mb-3 prata-regular ">
+                            Karla Yaneth Cruz Sandoval
                         </h1>
-                        <p class="lead text-white text-shadow-1">Estudiante de ingenieria en ciencias de la
+                        <p class="lead text-black text-shadow-1">Estudiante de ingenieria en ciencias de la
                             computacion y desarrolladora de frotnend junior</p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
 
-                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contáctame</button>
+                            <button type="button" class="btn btn-outline-dark btn-lg px-4 me-md-2">Contáctame</button>
                             <button type="button"
-                                class="btn btn-secondary btn-lg px-4">yanethcruzsandoval2@gmail.com</button>
+                                class="btn btn-outline-dark btn-lg px-4">yanethcruzsandoval2@gmail.com</button>
                         </div>
                     </div>
                 </div>
@@ -84,13 +99,14 @@
         </section>
 
         <section class="container px-4 py-5" id="habilidades">
-            <h2 class="pb-2 border-bottom">Habilidades</h2>
+            <h2 class="pb-2 border-bottom prata-regular">Habilidades</h2>
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
-                        <i class="bi bi-code-square"></i>
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light fs-2 px-3 py-2 rounded m-2">
+                        <i class="bi bi-code-square icono"></i>
                     </div>
+
                     <h3 class="fs-2 text-body-emphasis">Desarrollo Web</h3>
                     <p>Conozco y aprendo cada vez mas de lo que son HTML, CSS y JS para el desarrollo y creacion dee
                         paginas webs</p>
@@ -98,9 +114,9 @@
 
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light fs-2 px-3 py-2 rounded m-2">
                         <!-- aqui se coloca el icono  -->
-                        <i class="bi bi-tv"></i>
+                        <i class="bi bi-tv icono"></i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis">Tecnologias Emergentes </h3>
                     <p>Realice un curso acerca de las tecnologias emergentes, como fueron evolucionando y cuales son
@@ -109,9 +125,9 @@
 
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light fs-2 px-3 py-2 rounded m-2">
                         <!-- aqui se coloca el icono  -->
-                        <i class="bi bi-terminal-fill"></i>
+                        <i class="bi bi-terminal-fill icono"></i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis">Programación </h3>
                     <p>Tengo conocimiento acerca de Java, Lenguaje C y C++</p>
@@ -120,8 +136,8 @@
 
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
-                        <i class="bi bi-check-circle"></i>
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light fs-2 px-3 py-2 rounded m-2">
+                        <i class="bi bi-check-circle icono"></i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis">Responsable </h3>
                     <p>Soy comprometida y cumplida con los trabajos que realizo, buscando siempre dar un buen resultado.
@@ -130,8 +146,8 @@
 
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
-                        <i class="bi bi-heart-fill"></i>
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light fs-2 px-3 py-2 rounded m-2">
+                        <i class="bi bi-heart-fill icono"></i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis">Empatia</h3>
                     <p>Tiendo a comprender las diferentes situaciones y emociones que se puedan presentar, considerando
@@ -141,9 +157,9 @@
 
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light fs-2 px-3 py-2 rounded m-2">
                         <!-- aqui se coloca el icono  -->
-                        <i class="bi bi-people-fill"></i>
+                        <i class="bi bi-people-fill icono"></i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis">Trabajo en equipo </h3>
                     <p>Durante mi tiempo como estudiante es algo que constantemente se trabaja debido a que varios de
@@ -155,7 +171,7 @@
         </section>
 
         <section class="container px-4 py-5" id="proyectos">
-            <h2 class="pb-2 border-bottom">Proyectos</h2>
+            <h2 class="pb-2 border-bottom prata-regular">Proyectos</h2>
 
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                 <div class="col">
@@ -166,7 +182,8 @@
                             <ul class="d-flex list-unstyled mt-auto">
                                 <!-- mx se ocupa para poner un margen en ambos lados automaticos y centrar las cosas -->
                                 <li class="mx-auto">
-                                    <a class="link-light" href="" target="_blank">DA CLICK</a>
+                                    <a class="link-light" href="https://clon-google-b7.vercel.app/" target="_blank">DA
+                                        CLICK</a>
 
                             </ul>
                         </div>
@@ -192,7 +209,7 @@
         </section>
 
         <section id="testimonios">
-            <h2 class="container text-center">Testimonios</h2>
+            <h2 class="container text-center prata-regular">Testimonios</h2>
             <div id="myCarousel" data-bs-theme="dark" class="carousel slide mb-6" data-bs-ride="carousel">
 
                 <!-- Indicadores son los puntitos encima que me permiten navegar por los elementos -->
