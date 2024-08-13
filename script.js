@@ -43,10 +43,16 @@ typewriterFrase
   .deleteAll()
   .typeString('Tanaka Seako ')
   .pauseFor(1000)
+  .deleteAll()
+  .typeString('"Todos somos estrellas perdidas tratando de ilumnar la oscuridad"')
+  .pauseFor(400)
+  .deleteAll()
+  .typeString('Jeon Jung Kook')
+  .pauseFor(1000)
   .start();
 
 
-let audioElement; // Variable para almacenar el objeto Audio
+/* let audioElement; // Variable para almacenar el objeto Audio
 const mainElement = document.querySelector('main'); // Seleccionar la etiqueta <main>
 mainElement.addEventListener('click', function () {
   if (!audioElement) {
@@ -65,7 +71,7 @@ pauseButton.addEventListener('click', function () {
     pauseButton.textContent = "Reanudar";
   }
 });
-
+ */
 
 async function copiarAlPortapapeles(texto) {
   try {
@@ -75,6 +81,7 @@ async function copiarAlPortapapeles(texto) {
     console.error('Error al copiar:', err);
   }
 }
+
 
 
 

@@ -11,17 +11,16 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- Para añadir la musica -->
+    <!-- estilo de letra de la pagina -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Prata&display=swap"
+        rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
-    <!-- estilo de titulo nombre -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -31,9 +30,9 @@
 
 <body>
 
-    <audio id="miAudio" autoplay>
+    <!--  <audio id="miAudio" autoplay>
         <source src="assets/music/audio.mp3" type="audio/mpeg">
-    </audio>
+    </audio> -->
 
 
 
@@ -62,10 +61,10 @@
                         <li class="nav-item">
                             <a class="nav-link active prata-regular" href="#contacto">Contacto</a>
                         </li>
-                        <li class="nav-item btn btn-light">
+                        <!--  <li class="nav-item btn btn-light">
                             <button id="pauseButton  ">Pausar</button>
 
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -88,9 +87,15 @@
                             computacion y desarrolladora de frotnend junior</p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
 
-                            <button type="button" class="btn btn-outline-dark btn-lg px-4 me-md-2">Contáctame</button>
-                            <button type="button"
-                                class="btn btn-outline-dark btn-lg px-4">yanethcruzsandoval2@gmail.com</button>
+                            <button type="button" class="btn btn-outline-dark btn-lg px-4 me-md-2">
+                                <a href="https://www.linkedin.com/in/karla-cruz-sandoval-a05081322/"
+                                    target="_blank">Contáctame</a>
+                            </button>
+
+                            <button type="button" class="btn btn-outline-dark btn-lg px-4 me-md-2">
+                                <a href="mailto:yanethcruzsandoval2@gmail.com"
+                                    target="_blank">yanethcruzsandoval2@gmail.com</a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -98,10 +103,10 @@
             </div>
         </section>
 
-        <section class="container px-4 py-5" id="habilidades">
+        <section class="container px-4 py-5" data-aos="fade-right" id="habilidades">
             <h2 class="pb-2 border-bottom prata-regular">Habilidades</h2>
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                <div class="feature col">
+                <div class="feature col" data-aos="flip-down">
                     <div
                         class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light fs-2 px-3 py-2 rounded m-2">
                         <i class="bi bi-code-square icono"></i>
@@ -112,7 +117,7 @@
                         paginas webs</p>
                 </div>
 
-                <div class="feature col">
+                <div class="feature col" data-aos="flip-down">
                     <div
                         class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light fs-2 px-3 py-2 rounded m-2">
                         <!-- aqui se coloca el icono  -->
@@ -123,7 +128,7 @@
                         aquellas que usamos en la actualidad</p>
                 </div>
 
-                <div class="feature col">
+                <div class="feature col" data-aos="flip-down">
                     <div
                         class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light fs-2 px-3 py-2 rounded m-2">
                         <!-- aqui se coloca el icono  -->
@@ -134,7 +139,7 @@
                 </div>
 
 
-                <div class="feature col">
+                <div class="feature col" data-aos="flip-down">
                     <div
                         class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light fs-2 px-3 py-2 rounded m-2">
                         <i class="bi bi-check-circle icono"></i>
@@ -144,7 +149,7 @@
                     </p>
                 </div>
 
-                <div class="feature col">
+                <div class="feature col" data-aos="flip-down">
                     <div
                         class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light fs-2 px-3 py-2 rounded m-2">
                         <i class="bi bi-heart-fill icono"></i>
@@ -155,7 +160,7 @@
                     </p>
                 </div>
 
-                <div class="feature col">
+                <div class="feature col" data-aos="flip-down">
                     <div
                         class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light fs-2 px-3 py-2 rounded m-2">
                         <!-- aqui se coloca el icono  -->
@@ -171,12 +176,13 @@
         </section>
 
         <section class="container px-4 py-5" id="proyectos">
-            <h2 class="pb-2 border-bottom prata-regular">Proyectos</h2>
+            <h2 class="pb-2 border-bottom prata-regular" data-aos="flip-left">Proyectos</h2>
 
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                 <div class="col">
                     <div id="proyecto-1"
-                        class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        data-aos="zoom-in-down">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de Google</h3>
                             <ul class="d-flex list-unstyled mt-auto">
@@ -191,7 +197,8 @@
                 </div>
                 <div class="col">
                     <div id="proyecto-1"
-                        class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        data-aos="zoom-in-down">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de Google</h3>
                             <ul class="d-flex list-unstyled mt-auto">
@@ -209,8 +216,9 @@
         </section>
 
         <section id="testimonios">
-            <h2 class="container text-center prata-regular">Testimonios</h2>
-            <div id="myCarousel" data-bs-theme="dark" class="carousel slide mb-6" data-bs-ride="carousel">
+            <h2 class="container text-center prata-regular" data-aos="flip-left">Testimonios</h2>
+            <div id="myCarousel" data-bs-theme="dark" class="carousel slide mb-6" data-bs-ride="carousel"
+                data-aos="zoom-in">
 
                 <!-- Indicadores son los puntitos encima que me permiten navegar por los elementos -->
                 <div class="carousel-indicators">
@@ -226,7 +234,7 @@
                 <div class="carousel-inner">
                     <!-- Solo un active por grupo de item -->
                     <div class="carousel-item active">
-                        <article class="container py-5 text-center px-5">
+                        <article class="container py-5 text-center px-5 gupter-regular bg-white rounded-5">
                             <img class="rounded-5" src="assets/tSteff.jpg" height="300" alt="Paola">
                             <h3>Paola Steffani Arriaga Garcia</h3>
                             <p>Trabajar con Karla es poder trabajar en equipo, crear buenos proyectos y escuchar y dar
@@ -237,27 +245,37 @@
                                 cuenta la opinión de todos y sabe reconocer cuando se equivoca y aceptar consejos, es
                                 bastante comprensiva y siempre tratara de hacer el trabajo igualitario para todos,
                                 trabajar con Karla es dedicación, esfuerzo y sobre todo poder creer en ti mismo.
-                                Compañera de estudios universitarios.
                             </p>
+                            <p class="ocupacion">Estudiante de Ingenieria en Ciencias De la Computación</p>
+                            <p class="escu">BUAP</p>
+
+                        </article>
                         </article>
                     </div>
 
-                    <div class="carousel-item active">
-                        <article class="container py-5 text-center px-5">
+                    <div class=" carousel-item ">
+                        <article class=" container py-5 text-center px-5 gupter-regular bg-white rounded-5">
                             <img class="rounded-5" src="assets/tLitzi.jpeg" height="300" alt="Litzi Sanchez">
-                            <h3>Litzi</h3>
+                            <h3>Litzi Sánchez</h3>
                             <p>Karla ha demostrado ser una alumna responsable y muy creativa durante el curso. Su
-                                interés por aprender la motiva a mejorar con cada proyecto que realiza.
-                                Litzi Sánchez.
-                                Mentora Técnica en Tecnolochicas.</p>
+                                interés por aprender la motiva a mejorar con cada proyecto que realiza.</p>
+                            <p> Mentora Técnica en Tecnolochicas</p>
+
                         </article>
                     </div>
 
-                    <div class="carousel-item active">
-                        <article class="container py-5 text-center px-5">
-                            <img class="rounded-5" src="assets/shoyo.png" height="300" alt="Shoyo hinata">
-                            <h3>Ada Lovelace</h3>
-                            <p>Trabajar con Karla es una gran experiencia </p>
+                    <div class="carousel-item ">
+                        <article class="container py-5 text-center px-5 gupter-regular bg-white rounded-5">
+                            <img class="rounded-5" src="assets/isaac.jpg" height="300" alt="Isaac Aguilar">
+                            <h3>Isaac Aguilar Duran </h3>
+                            <p>Karla trabaja de una manera bastante buenas sabe como acoplarse al trabajar en equipo y
+                                es muy decidida a la hora de tomar decisiones , siempre toma nota cuando alguien le
+                                corrige algo o sobre alguna duda que ella posesa , uno de sus puntos mas fuerte es que
+                                siempre trata sacar a flote la idea o el plan que ella tenga persevera hasta alcanzar
+                                sus metas. </p>
+                            <p class="ocupacion text-center">Estudiante de Ingenieria en Ciencias De la Computación</p>
+                            <p class="text-center">BUAP</p>
+
                         </article>
                     </div>
 
@@ -285,7 +303,7 @@
     <footer id="contacto" class="container-fluid bg-black" data-bs-theme="dark">
         <div class="py-4">
             <div class="text-center mt-3">
-                <i class="bi bi-flower1 fs-1 text-body-secondary"></i>
+                <i class="class=bi bi-stars  fs-1 text-body-secondary"></i>
 
             </div>
 
@@ -300,18 +318,18 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="https://www.instagram.com/yan_crsl/" target="_blank"
+                    <a href="https://www.linkedin.com/in/karla-cruz-sandoval-a05081322/" target="_blank"
                         class="nav-link px-2 text-body-secondary"><i class="bi bi-linkedin fs-1"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="https://www.instagram.com/yan_crsl/" target="_blank"
-                        class="nav-link px-2 text-body-secondary"><i class="bi bi-github fs-1"></i>
+                    <a href="https://github.com/Yanethcr" target="_blank" class="nav-link px-2 text-body-secondary"><i
+                            class="bi bi-github fs-1"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://www.instagram.com/yan_crsl/" target="_blank"
+                    <a href="mailto:yanethcruzsandoval2@gmail.com" target="_blank"
                         class="nav-link px-2 text-body-secondary"><i class="bi bi-envelope fs-1"></i>
                     </a>
                 </li>
@@ -322,7 +340,10 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
